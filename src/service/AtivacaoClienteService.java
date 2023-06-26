@@ -1,13 +1,16 @@
 package service;
 
 import modelo.Cliente;
-import notificacao.NotificadorEmail;
+import notificacao.Notificador;
 
 public class AtivacaoClienteService {
+    private Notificador notificador;
+    public AtivacaoClienteService(Notificador notificador){
+        this.notificador = notificador;
 
+    }
     public void ativar(Cliente cliente){
         cliente.ativar();
-        NotificadorEmail notificador = new NotificadorEmail();
-        notificador.notificar(cliente, "Seu cadastro no sistema esta ativo!");
+        this.notificador.notificar(cliente, "Seu cadastro no sistema esta ativo!");
     }
 }
