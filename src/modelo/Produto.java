@@ -4,9 +4,9 @@ import java.math.BigDecimal;
 
 public class Produto {
     private String nome;
-    private BigDecimal valorTotal;
+    private double valorTotal;
 
-    public Produto(String nome, BigDecimal valorTotal) {
+    public Produto(String nome, double valorTotal) {
         this.nome = nome;
         this.valorTotal = valorTotal;
     }
@@ -15,7 +15,7 @@ public class Produto {
         return nome;
     }
 
-    public BigDecimal getValorTotal() {
+    public double getValorTotal() {
         return valorTotal;
     }
 

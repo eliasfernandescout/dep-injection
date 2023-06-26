@@ -16,7 +16,7 @@ public class EmissaoNotaFiscalService {
         // TODO emite a nota fiscal aqui;
         // INFORMAR AO CLIENTE QUE A NOTA FISCAL FOI EMITIDA
 
-        this.notificador.notificar(cliente, "Nota fiscal do produto" + produto.getNome() + "foi emitida.");
+        this.notificador.notificar(cliente, "Nota fiscal do produto " + produto.getNome() + " foi emitida.");
 
     }
 
